@@ -1,4 +1,8 @@
+
 #This code works as along as UCI HAR Dataset folder is in the working directory
+
+#This requires reshape2 package. Code was tested in Rstudio.
+
 
 #Import X_train and X_Test data
 
