@@ -1,4 +1,3 @@
-
 #This code works as along as UCI HAR Dataset folder is in the working directory
 
 #This requires reshape2 package. Code was tested in Rstudio.
@@ -58,7 +57,7 @@ write.table(tidy_dataset_A, "merged_tidy_data.txt")
 require(reshape2)
 m_data <- melt(tidy_dataset_A, id=c("subject","activity"))
 tidy_avg_data <- dcast(m_data, formula = subject + activity ~ variable, mean)
-write.table(tidy_avg_data, "dataset_with_averages.csv")
+write.table(tidy_avg_data, "dataset_with_averages.txt")
 
 
 
